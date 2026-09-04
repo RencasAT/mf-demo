@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { Boxes } from "lucide-react";
-
+import { useAuth } from "host/auth";
 import { DashboardLayout } from "host/layout";
 import {
   Badge,
@@ -29,10 +29,15 @@ export const DemoHomePage = () => {
   const dispatch = useDispatch();
   const { search } = useSelector(selectDemoState);
   const { data: items = [], isLoading } = useGetDemoItemsQuery();
+  const { user } = useAuth();
 
   const filtered = items.filter((item) =>
     item.title.toLowerCase().includes(search.trim().toLowerCase())
   );
+
+  console.log({
+    user
+  })
 
   return (
     <DashboardLayout breadcrumb={{ current: "Demo", items: [] }}>
@@ -47,6 +52,9 @@ export const DemoHomePage = () => {
             <CardDescription>
               Este módulo vive en su propio repositorio y se despliega solo. El host únicamente
               reserva <code>/demo/*</code> y carga este <code>remoteEntry.js</code> en runtime.
+            </CardDescription>
+            <CardDescription>
+              User: {user?.fullname}
             </CardDescription>
           </CardHeader>
           <CardContent>
