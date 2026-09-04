@@ -54,7 +54,7 @@ export const DemoHomePage = () => {
               reserva <code>/demo/*</code> y carga este <code>remoteEntry.js</code> en runtime.
             </CardDescription>
             <CardDescription>
-              User: {user?.fullname}
+              User: {user?.fullname} - email: {user?.email}
             </CardDescription>
           </CardHeader>
           <CardContent>
