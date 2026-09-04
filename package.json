@@ -1,0 +1,35 @@
+{
+  "name": "mf-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Microfrontend Demo del backoffice de Apuesta Total. Repositorio independiente.",
+  "scripts": {
+    "dev": "vite --mode dev",
+    "build:dev": "vite build --mode dev",
+    "build:staging": "vite build --mode staging",
+    "build:prod": "vite build --mode prod",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@atbo/mf-kit": "1.0.1",
+    "@reduxjs/toolkit": "^2.8.2",
+    "lucide-react": "^0.525.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.6.3"
+  },
+  "devDependencies": {
+    "@module-federation/vite": "1.21.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/node": "^24.0.13",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "tailwindcss": "^4.1.11",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4"
+  }
+}

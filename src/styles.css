@@ -1,0 +1,28 @@
+/*
+ * Estilos del microfrontend.
+ *
+ * Los tokens (--primary, --border, --radius...) vienen de @atbo/mf-kit, el mismo
+ * paquete que consume el host: así las clases de Tailwind generadas aquí pintan
+ * exactamente igual que las del shell, sin copiar valores.
+ *
+ * Importante: se cargan las utilidades SIN preflight. El reset global lo aplica
+ * el host una sola vez; duplicarlo desde el remote pisaría estilos del shell.
+ * En standalone el reset llega por `host/styles` (ver standalone.tsx).
+ *
+ * OJO: Tailwind sólo genera las clases que encuentra en el código de ESTE
+ * repositorio. Las de los componentes del host (`host/ui`, `host/layout`)
+ * llegan en su hoja, no aquí: por federación viaja el JS, no el CSS.
+ */
+
+/*
+ * Declara el orden de las capas antes de nada. Es el mismo que fija el host con
+ * `@import "tailwindcss"`, así que embebido es un no-op; en standalone evita que
+ * el orden acabe dependiendo de qué hoja se inyecte primero (con `base` después
+ * de `utilities`, el preflight pisaría las utilidades).
+ */
+@layer theme, base, components, utilities;
+
+@import "@atbo/mf-kit/tokens.css";
+
+@import "tailwindcss/theme.css" layer(theme) prefix(mf);
+@import "tailwindcss/utilities.css" layer(utilities);

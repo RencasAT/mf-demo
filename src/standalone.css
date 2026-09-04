@@ -1,0 +1,9 @@
+/*
+ * Sólo para `pnpm dev` (microfrontend servido en solitario).
+ *
+ * El reset (preflight), la tipografía y las utilidades que pintan los
+ * componentes del host los trae `host/styles`, importado en standalone.tsx:
+ * es literalmente la misma hoja que carga el shell, así que en solitario se ve
+ * igual que embebido. Aquí sólo van los estilos propios del microfrontend.
+ */
+@import "./styles.css";
