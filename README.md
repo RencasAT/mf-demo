@@ -58,7 +58,7 @@ opcionales** — ya están en `vercel.json`:
 El host apunta aquí sin recompilarse, desde su `public/mf-remotes.js`:
 
 ```js
-window.__MF_REMOTES__ = { DEMO: "https://mf-demo.vercel.app/remoteEntry.js" };
+window.__MF_REMOTES__ = { DEMO: "https://mf-demo-eta.vercel.app/remoteEntry.js" };
 ```
 
 ## Estructura
