@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router";
 
 import { DashboardLayout } from "host/layout";
+import { useAuth } from "host/auth";
 import {
   Button,
   Card,
@@ -22,12 +23,19 @@ import { useGetDemoItemQuery } from "../store/demoApi";
 export const DemoDetailPage = () => {
   const { id = "" } = useParams();
   const { data: item, isLoading } = useGetDemoItemQuery(id);
+  const { user } = useAuth();
+
+  console.log({
+    user
+  })
+
 
   return (
     <DashboardLayout
       breadcrumb={{ current: "Detalle", items: [{ label: "Demo", to: "/demo" }] }}
     >
       <div className="flex flex-col gap-4 p-4">
+      User: {user?.name}
         {isLoading && <Skeleton className="h-40 w-full" />}
 
         {!isLoading && !item && (
