@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atbo/mf-kit':
-        specifier: 1.0.4
-        version: 1.0.4(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(@types/react@19.2.18)(react-dom@19.1.0(react@19.1.0))(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+        specifier: 1.0.5
+        version: 1.0.5(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(@types/react@19.2.18)(react-dom@19.1.0(react@19.1.0))(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       '@reduxjs/toolkit':
         specifier: 2.8.2
         version: 2.8.2(react-redux@9.2.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0)
@@ -60,14 +60,14 @@ importers:
 
 packages:
 
-  '@atbo/mf-kit@1.0.4':
-    resolution: {integrity: sha1-wMy1GelXhBos8BNNdUbYJEFu78I=, tarball: https://repository.kurax.at/api/v4/projects/203/packages/npm/@atbo/mf-kit/-/@atbo/mf-kit-1.0.4.tgz}
+  '@atbo/mf-kit@1.0.5':
+    resolution: {integrity: sha1-b+6wjQqPyNEi3hup+gYt0ccQPqs=, tarball: https://repository.kurax.at/api/v4/projects/203/packages/npm/@atbo/mf-kit/-/@atbo/mf-kit-1.0.5.tgz}
     peerDependencies:
-      '@reduxjs/toolkit': 2.8.2
-      '@types/react': 19.1.8
-      react: 19.1.0
-      react-dom: 19.1.0
-      react-router: 7.6.3
+      '@reduxjs/toolkit': ^2.8.2
+      '@types/react': ^19.1.8
+      react: ^19.1.0
+      react-dom: ^19.1.0
+      react-router: ^7.6.3
 
   '@babel/code-frame@7.29.7':
     resolution: {integrity: sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==}
@@ -1017,7 +1017,7 @@ packages:
 
 snapshots:
 
-  '@atbo/mf-kit@1.0.4(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(@types/react@19.2.18)(react-dom@19.1.0(react@19.1.0))(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
+  '@atbo/mf-kit@1.0.5(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(@types/react@19.2.18)(react-dom@19.1.0(react@19.1.0))(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@reduxjs/toolkit': 2.8.2(react-redux@9.2.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0)
       '@types/react': 19.2.18

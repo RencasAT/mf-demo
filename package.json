@@ -13,7 +13,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@atbo/mf-kit": "1.0.4",
+    "@atbo/mf-kit": "1.0.5",
     "@reduxjs/toolkit": "2.8.2",
     "lucide-react": "^0.525.0",
     "react": "19.1.0",
