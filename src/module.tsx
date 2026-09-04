@@ -5,6 +5,7 @@ import type { MicrofrontendModule } from "@atbo/mf-kit/contract";
 
 import { DemoHomePage } from "./pages/DemoHomePage";
 import { DemoDetailPage } from "./pages/DemoDetailPage";
+import { DemoNewPage } from "./pages/DemoNewPage";
 import { demoApi } from "./store/demoApi";
 import { DEMO_REDUCER_PATH, demoSlice } from "./store/demoSlice";
 
@@ -17,6 +18,7 @@ import "./styles.css";
  */
 const routes: RouteObject[] = [
   { index: true, element: <DemoHomePage /> },
+  { path: "nuevo", element: <DemoNewPage /> },
   { path: "detalle/:id", element: <DemoDetailPage /> },
   { path: "*", element: <Navigate to="." replace /> },
 ];

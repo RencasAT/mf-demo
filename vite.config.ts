@@ -5,7 +5,7 @@ import { federation } from "@module-federation/vite";
 
 import { MF_BUILD_TARGET, MF_SHARE_STRATEGY, sharedDependencies } from "@atbo/mf-kit/shared";
 
-const PORT = 5176;
+const PORT = 5174;
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");

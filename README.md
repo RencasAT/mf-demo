@@ -11,7 +11,7 @@ propia versión. El host solo reserva la ruta `/demo/*` y carga este
 | --- | --- |
 | `remoteName` | `mfDemo` (debe coincidir con el registro del host) |
 | Ruta en el host | `/demo` |
-| Puerto dev | `5176` |
+| Puerto dev | `5174` |
 | Módulo expuesto | `./module` |
 
 ## Requisitos
@@ -29,7 +29,7 @@ En Vercel, la misma variable se define en *Settings → Environment Variables*.
 ## Desarrollo
 
 ```bash
-pnpm dev    # http://localhost:5176/demo
+pnpm dev    # http://localhost:5174/demo
 ```
 
 **Necesita un host alcanzable**: el core (store, UI, layout, sesión) se consume

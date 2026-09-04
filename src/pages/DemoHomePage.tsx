@@ -35,10 +35,6 @@ export const DemoHomePage = () => {
     item.title.toLowerCase().includes(search.trim().toLowerCase())
   );
 
-  console.log({
-    user
-  })
-
   return (
     <DashboardLayout breadcrumb={{ current: "Demo", items: [] }}>
       <div className="flex flex-col gap-4 p-4">
@@ -56,6 +52,9 @@ export const DemoHomePage = () => {
             <CardDescription>
               User: {user?.fullname} - email: {user?.email}
             </CardDescription>
+            <Button asChild size="sm" className="w-fit">
+              <Link to="nuevo">Nuevo registro</Link>
+            </Button>
           </CardHeader>
           <CardContent>
             <Input
