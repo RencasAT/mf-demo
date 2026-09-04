@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atbo/mf-kit':
-        specifier: 1.0.2
-        version: 1.0.2(@reduxjs/toolkit@2.12.0(react-redux@9.3.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(@types/react@19.2.18)(react-router@7.18.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+        specifier: 1.0.3
+        version: 1.0.3(@reduxjs/toolkit@2.12.0(react-redux@9.3.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(@types/react@19.2.18)(react-router@7.18.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@reduxjs/toolkit':
         specifier: ^2.8.2
         version: 2.12.0(react-redux@9.3.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0)
@@ -60,8 +60,8 @@ importers:
 
 packages:
 
-  '@atbo/mf-kit@1.0.2':
-    resolution: {integrity: sha1-gK6/VPDd6+KYc3DyW0VvEsjAt8E=, tarball: https://repository.kurax.at/api/v4/projects/203/packages/npm/@atbo/mf-kit/-/@atbo/mf-kit-1.0.2.tgz}
+  '@atbo/mf-kit@1.0.3':
+    resolution: {integrity: sha1-fJYQ0Y/UXeymmkn/cJP5uUh9QTg=, tarball: https://repository.kurax.at/api/v4/projects/203/packages/npm/@atbo/mf-kit/-/@atbo/mf-kit-1.0.3.tgz}
     peerDependencies:
       '@reduxjs/toolkit': ^2.8.2
       '@types/react': ^19.1.8
@@ -1015,7 +1015,7 @@ packages:
 
 snapshots:
 
-  '@atbo/mf-kit@1.0.2(@reduxjs/toolkit@2.12.0(react-redux@9.3.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(@types/react@19.2.18)(react-router@7.18.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
+  '@atbo/mf-kit@1.0.3(@reduxjs/toolkit@2.12.0(react-redux@9.3.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(@types/react@19.2.18)(react-router@7.18.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
     dependencies:
       '@reduxjs/toolkit': 2.12.0(react-redux@9.3.0(@types/react@19.2.18)(react@19.1.0)(redux@5.0.1))(react@19.1.0)
       '@types/react': 19.2.18

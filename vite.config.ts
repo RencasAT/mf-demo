@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { federation } from "@module-federation/vite";
 
-import { MF_BUILD_TARGET, sharedDependencies } from "@atbo/mf-kit/shared";
+import { MF_BUILD_TARGET, MF_SHARE_STRATEGY, sharedDependencies } from "@atbo/mf-kit/shared";
 
 const PORT = 5176;
 
@@ -43,6 +43,7 @@ export default defineConfig(({ mode }) => {
         shared: sharedDependencies,
         // Adjunta el CSS del remote a los módulos expuestos: sin esto, en build
         // de producción el módulo se cargaría en el host sin sus estilos.
+        shareStrategy: MF_SHARE_STRATEGY,
         bundleAllCSS: true,
         dts: false,
       }),
